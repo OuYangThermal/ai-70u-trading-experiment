@@ -1,0 +1,14 @@
+{
+  "cash": 70.0,
+  "qty": 0.0,
+  "cost_basis": 0.0,
+  "start_date": "2026-09-24",
+  "strategy": "hold_cash@v1",
+  "benchmark_buy_price": 84318.0,
+  "trades_today": 0,
+  "last_trade_day": null,
+  "day_start_equity": 70.0,
+  "halted": false,
+  "halt_reason": null,
+  "equity_day": "2026-09-24"
+}
