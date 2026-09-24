@@ -1,0 +1,36 @@
+experiment:
+  name: "AI 70U Trading Experiment"
+  phase: 1
+  starting_capital_usdt: 70.0
+  duration_days: 30
+  # start_date 在 Paper Live 启动时填入 (UTC, YYYY-MM-DD)
+  start_date: null
+
+market:
+  primary_symbol: "BTCUSDT"
+  symbols: ["BTCUSDT"]
+  timeframe: "1h"
+  data_source_primary: "https://data-api.binance.vision"
+  data_source_fallback: "https://api.kraken.com"
+
+costs:
+  fee_rate: 0.001       # 0.1% per side
+  slippage_rate: 0.0005 # 0.05% per side
+
+risk:
+  max_position_pct: 0.95
+  min_trade_usdt: 10.0
+  max_trades_per_day: 4
+  daily_loss_halt_pct: 0.08
+  total_loss_halt_pct: 0.25
+
+strategy:
+  active_version: "v1"
+  # v1 已冻结（2026-09-24）：hold_cash，见 STRATEGY.md
+  v1:
+    name: "hold_cash"
+    params: {}
+
+benchmark:
+  type: "buy_and_hold"
+  symbol: "BTCUSDT"
